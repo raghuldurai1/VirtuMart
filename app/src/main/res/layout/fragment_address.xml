@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".fragment.AddressFragment">
+
+        <!-- Non-editable Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+        <!-- Non-editable Phone Number -->
+        <TextView
+            android:id="@+id/textPhone"
+            android:text="Phone: +91"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+        <!-- Address Field (Bigger) -->
+        <EditText
+            android:id="@+id/editAddress"
+            android:hint="Enter Address"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/editLandmark"
+            android:hint="Enter Landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/editState"
+            android:hint="Enter State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/editCity"
+            android:hint="Enter City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"/>
+
+        <EditText
+            android:id="@+id/editPincode"
+            android:hint="Enter Pincode"
+            android:inputType="number"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"/>
+
+        <!-- Save & Proceed Button -->
+        <Button
+            android:id="@+id/btnSaveAddress"
+            android:text="Save and Proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>

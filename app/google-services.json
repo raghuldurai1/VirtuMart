@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "860515711768",
+    "project_id": "pkart-8e638",
+    "storage_bucket": "pkart-8e638.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860515711768:android:9797583b2bbaef469cbc6d",
+        "android_client_info": {
+          "package_name": "com.example.pkart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVEDj7DHwaIQd_tuUe0eeJ928K5rkp3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
