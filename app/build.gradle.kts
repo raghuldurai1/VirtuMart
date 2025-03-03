@@ -78,7 +78,7 @@ dependencies {
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
     implementation(libs.room.ktx)
-
+    implementation("androidx.cardview:cardview:1.0.0")
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
 
