@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.pkart.fragment.CheckoutFragment">
+
+    <!-- User Information -->
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:text="Name: John Doe\nMobile: 9876543210\nAddress: XYZ Street"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount to be paid : ₹0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserInfo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Loading Animation (Hidden Initially) -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieLoading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/success_animation"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNote"/>
+
+    <!-- Select Payment Method Label -->
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select Payment Method"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottieLoading" />
+
+    <!-- Cash on Delivery Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cash on Delivery"
+        android:backgroundTint="@color/virtu_primary"
+        android:textColor="@color/virtu_card_background"
+        android:padding="9dp"
+        android:layout_marginTop="12dp"
+        app:icon="@drawable/cashdelivery"
+        app:iconSize="30dp"
+        app:iconGravity="textStart"
+        android:background="@drawable/square_button"
+        app:layout_constraintTop_toBottomOf="@id/tvNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Google Pay Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGooglePay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay via Google Pay"
+        android:backgroundTint="@color/virtu_primary"
+        android:textColor="@color/virtu_card_background"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/square_button"
+        app:icon="@drawable/ic_google_pay"
+        app:iconSize="30dp"
+        app:iconGravity="textStart"
+        app:layout_constraintTop_toBottomOf="@id/btnCod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

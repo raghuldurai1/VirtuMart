@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need assistance? Find answers to common questions or contact us for support."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="16dp" />
+
+        <!-- FAQ Section -->
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022 How do I track my order?\n   - Go to 'Your Orders' section."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022 How do I return a product?\n   - Select the item in 'Your Orders' and request a return."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="8dp" />
+
+        <!-- Contact Us Section with Icons -->
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:paddingTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" support@virtumart.com"
+                android:textSize="16sp"
+                android:textColor="#1E88E5"
+                android:paddingStart="8dp"
+                android:autoLink="email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" +91 98765 43210"
+                android:textSize="16sp"
+                android:textColor="#1E88E5"
+                android:paddingStart="8dp"
+                android:autoLink="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" WhatsApp: +91 98765 43210"
+                android:textSize="16sp"
+                android:textColor="#1E88E5"
+                android:paddingStart="8dp"
+                android:autoLink="phone" />
+        </LinearLayout>
+
+        <!-- Additional Support -->
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Support"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022 Report an Issue: Go to 'Settings > Report an Issue'."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022 Refund Issues: Refunds take 5-7 business days. Contact support if delayed."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022 Privacy and Security: Read 'Settings > Privacy Policy'."
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For further assistance, reach out to us!"
+            android:textSize="16sp"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

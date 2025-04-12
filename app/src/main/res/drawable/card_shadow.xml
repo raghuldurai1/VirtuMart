@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First Outer Shadow (Soft Blur) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="12dp"/>
+            <gradient
+                android:angle="90"
+                android:startColor="#33000000"
+                android:endColor="@android:color/transparent"
+                android:type="linear"/>
+        </shape>
+    </item>
+
+    <!-- Second Inner Shadow (Darker Core) -->
+    <item android:left="4dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <gradient
+                android:angle="90"
+                android:startColor="#55000000"
+                android:endColor="@android:color/transparent"
+                android:type="linear"/>
+        </shape>
+    </item>
+
+    <!-- Card Base (White with Soft Edges) -->
+    <item android:left="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+
+</layer-list>

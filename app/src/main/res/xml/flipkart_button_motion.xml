@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetStart="@id/start"
+        app:constraintSetEnd="@id/end"
+        app:duration="400">
+
+        <!-- Flipkart-style bounce effect -->
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@id/btnDeleteAccount" />
+
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="50"
+                app:targetId="@id/btnDeleteAccount"
+                android:scaleX="1.2"
+                android:scaleY="1.2" />
+
+            <KeyAttribute
+                app:framePosition="100"
+                app:targetId="@id/btnDeleteAccount"
+                android:scaleX="1.0"
+                android:scaleY="1.0" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:id="@id/btnDeleteAccount"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/btnDeleteAccount"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+    </ConstraintSet>
+
+</MotionScene>

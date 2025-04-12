@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Profile Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardElevation="8dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/virtu_primary"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/virtu_primary"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/user"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="16dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profileText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guest ▼"
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Orders & Coupons Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYourOrders"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Your Orders"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/virtu_primary"
+                    android:textColor="@color/virtu_card_background"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/square_button"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCoupons"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Coupons"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/virtu_primary"
+                    android:textColor="@color/virtu_card_background"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/square_button"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <!-- New Releases Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Releases"
+                android:textColor="@color/gray"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/nothing3a"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Account Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:textColor="@color/gray"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:padding="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSavedAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saved Address"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/virtu_primary"
+                        android:textColor="@color/virtu_card_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/square_button"
+                        android:layout_marginBottom="12dp" />
+
+                   <!-- <TextView
+                        android:id="@+id/textViewAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textColor="@color/gray"
+                        android:text="Saved address: "
+                        android:textSize="16sp" />-->
+
+                    <TextView
+                        android:id="@+id/textViewDeliverTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deliver to: "
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPrivacySettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Settings"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/virtu_primary"
+                        android:textColor="@color/virtu_card_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/square_button"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and policies"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/virtu_primary"
+                        android:textColor="@color/virtu_card_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/square_button"
+                        android:layout_marginBottom="10dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnHelpSupport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Help and Support"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/virtu_primary"
+                        android:textColor="@color/virtu_card_background"
+                        android:padding="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/square_button" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

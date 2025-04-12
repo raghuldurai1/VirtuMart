@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.TermsActivity">
+
+    <!-- Toolbar with Back Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flipkart_blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Terms and Conditions -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="812dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:text="1. **General Terms**\n\n- You must be at least 18 years old or have the consent of a parent or guardian.\n\n- By using this app, you agree to comply with all applicable laws and regulations.\n\n- VirtuMart reserves the right to change, update, or modify these terms at any time.\n\n2. **User Account**\n\n- You are responsible for maintaining the confidentiality of your account and password.\n\n- Notify us immediately of any unauthorized use of your account.\n\n3. **Privacy Policy**\n\n- We are committed to protecting your privacy. Please refer to our Privacy Policy for more details.\n\n4. **User Conduct**\n\n- You agree not to use the app for any illegal purposes.\n\n- You will not post or transmit any harmful content, including viruses or malware.\n\n5. **Payments and Transactions**\n\n- All transactions made through the app are secure and processed via a third-party payment provider.\n\n- Payments for products will be made in the currency specified on the platform.\n\n6. **Shipping and Delivery**\n\n- Orders will be shipped within the time frame mentioned on the product page.\n\n- Delivery times may vary depending on the location.\n\n7. **Returns and Refunds**\n\n- If you are unsatisfied with your purchase, you may return it within 30 days of receiving the product.\n\n- Refunds will be processed within 7-10 business days.\n\n8. **Limitation of Liability**\n\n- VirtuMart is not responsible for any damages or losses resulting from the use of the app.\n\n9. **Termination of Account**\n\n- VirtuMart reserves the right to suspend or terminate your account at any time for violating these terms.\n\n10. **Governing Law**\n\n- These terms are governed by the laws of the country in which VirtuMart operates.\n\n11. **Contact Us**\n\n- If you have any questions regarding these terms, please contact us at support@virtumart.com."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+    <!-- Accept & Continue Button -->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

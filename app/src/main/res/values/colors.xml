@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#CE0101</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="yellow">#BFDE00</color>
+    <color name="purple">#000637</color>
+
+    <color name="virtu_primary">#2874F0</color> <!-- Flipkart Blue -->
+    <color name="virtu_primary_dark">#1A54D3</color>
+    <color name="virtu_accent">#FFC107</color> <!-- Flipkart Yellow -->
+
+    <!-- Backgrounds -->
+    <color name="virtu_background">#F1F3F6</color> <!-- Light Gray -->
+    <color name="virtu_card_background">#FFFFFF</color> <!-- White -->
+
+    <!-- Text Colors -->
+    <color name="virtu_text_primary">#212121</color> <!-- Black -->
+    <color name="virtu_text_secondary">#757575</color> <!-- Gray -->
+
+    <!-- Success & Warnings -->
+    <color name="virtu_success">#388E3C</color> <!-- Green -->
+    <color name="virtu_warning">#D32F2F</color> <!-- Red -->
+
+
+    <color name="gray">#757575</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#BDBDBD</color>
+    <color name="flipkart_blue">#2874F0</color>
+    <color name="flipkart_bg">#2874F0</color>  <!-- Flipkart Blue -->
+    <color name="red">#FF1000</color>
+
+</resources>
